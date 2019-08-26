@@ -103,7 +103,7 @@ class Ui_Launcher(object):
             os.system("open BLABLA_mac/BLABLA.app")
             print('실행!')
         elif platform.system() == 'Windows': # 윈도우 일떄
-            os.system("BLABLA_windows/BLALBA.exe")                
+            os.system("BLABLA_windows/BlaBla")                
 
 if __name__ == "__main__":
     import sys
