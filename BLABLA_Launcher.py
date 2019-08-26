@@ -7,9 +7,9 @@
 # WARNING! All changes made in this file will be lost!
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-import pip
 import subprocess
 import os
+import platform
 
 
 class Ui_Launcher(object):
@@ -81,24 +81,29 @@ class Ui_Launcher(object):
 
     def Mac_downloader(self): # 맥용 프로그램 다운로드    
         try:
-            os.system("rm -rf BLABLA_Release") # 기존 디렉토리 삭제
-            os.system("git clone https://github.com/ElbaBlaBla/BLABLA_Release.git") # 새로 다운로드
+            os.system("rm -rf BLABLA_mac") # 기존 디렉토리 삭제
+            # 새로 다운로드
+            os.system(
+                "git clone https://github.com/ElbaBlaBla/BLABLA_mac.git")
             self.status_label.setText("다운로드 완료!")
         except Exception:
             self.status_label.setText("다시 다운로드 해주세요")                
 
     def Win_downloader(self):
         try:
-            os.system("rm -rf BLABLA_Release")
+            os.system("rm -rf BLABLA_windows")
             os.system(
-                "git clone https://github.com/ElbaBlaBla/BLABLA_Release.git")
+                "git clone https://github.com/ElbaBlaBla/BLABLA_windows.git")
             self.status_label.setText("다운로드 완료!")
         except Exception:
             self.status_label.setText("다시 다운로드 해주세요")
 
     def EXE(self):
-        os.system("cd BLABLA_Release")
-        os.system
+        if platform.system() == 'Darwin': # 맥일때
+            os.system("open BLABLA_mac/BLABLA.app")
+            print('실행!')
+        elif platform.system() == 'Windows': # 윈도우 일떄
+            os.system("BLABLA_windows/BLALBA.exe")                
 
 if __name__ == "__main__":
     import sys
