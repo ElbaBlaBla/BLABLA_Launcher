@@ -1,10 +1,4 @@
-# -*- coding: utf-8 -*-
-
-# Form implementation generated from reading ui file 'Launcher.ui'
-#
-# Created by: PyQt5 UI code generator 5.12.2
-#
-# WARNING! All changes made in this file will be lost!
+# BLABLA Launcher
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 import subprocess
@@ -17,14 +11,14 @@ class Ui_Launcher(object):
         Launcher.setObjectName("Launcher")
         Launcher.resize(560, 326)
         font = QtGui.QFont()
-        font.setPointSize(30)
+        font.setPointSize(20)
         Launcher.setFont(font)
         self.BLABLA_Launcher = QtWidgets.QWidget(Launcher)
         self.BLABLA_Launcher.setObjectName("BLABLA_Launcher")
         self.label = QtWidgets.QLabel(self.BLABLA_Launcher)
         self.label.setGeometry(QtCore.QRect(0, 0, 271, 51))
         font = QtGui.QFont()
-        font.setPointSize(30)
+        font.setPointSize(20)
         self.label.setFont(font)
         self.label.setAlignment(QtCore.Qt.AlignCenter)
         self.label.setObjectName("label")
@@ -34,7 +28,7 @@ class Ui_Launcher(object):
         self.label_2 = QtWidgets.QLabel(self.BLABLA_Launcher)
         self.label_2.setGeometry(QtCore.QRect(210, 120, 131, 31))
         font = QtGui.QFont()
-        font.setPointSize(15)
+        font.setPointSize(13)
         self.label_2.setFont(font)
         self.label_2.setObjectName("label_2")
         self.mac_download = QtWidgets.QPushButton(self.BLABLA_Launcher)
@@ -43,7 +37,7 @@ class Ui_Launcher(object):
         self.label_3 = QtWidgets.QLabel(self.BLABLA_Launcher)
         self.label_3.setGeometry(QtCore.QRect(210, 180, 151, 31))
         font = QtGui.QFont()
-        font.setPointSize(15)
+        font.setPointSize(13)
         self.label_3.setFont(font)
         self.label_3.setObjectName("label_3")
         self.win_download = QtWidgets.QPushButton(self.BLABLA_Launcher)
@@ -52,7 +46,7 @@ class Ui_Launcher(object):
         self.status_label = QtWidgets.QLabel(self.BLABLA_Launcher)
         self.status_label.setGeometry(QtCore.QRect(90, 230, 231, 41))
         font = QtGui.QFont()
-        font.setPointSize(15)
+        font.setPointSize(13)
         self.status_label.setFont(font)
         self.status_label.setAlignment(QtCore.Qt.AlignCenter)
         self.status_label.setObjectName("status_label")
